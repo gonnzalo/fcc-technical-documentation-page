@@ -1,0 +1,86 @@
+html {
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.8;
+  font-size: 110%;
+  color: #222;
+  word-wrap: break-word; }
+
+.container #navbar {
+  position: fixed;
+  width: 300px;
+  height: 100%;
+  padding: 0rem 0 1rem 1rem;
+  background-color: #9629b805;
+  border: 1px solid #1e1c1f41;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 2rem;
+  top: 0;
+  float: left; }
+  .container #navbar::-webkit-scrollbar {
+    width: 0.3rem; }
+  .container #navbar::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(137, 21, 148, 0.322);
+    box-shadow: inset 0 0 6px rgba(137, 21, 148, 0.322); }
+  .container #navbar::-webkit-scrollbar-thumb {
+    background-color: #9010cc52;
+    outline: 1px solid #9010cc52; }
+  .container #navbar header {
+    margin-bottom: 1rem; }
+  .container #navbar ul a {
+    text-decoration: none;
+    transition: color 0.3s; }
+    .container #navbar ul a .active {
+      border-bottom: 2px solid rgba(144, 16, 204, 0.7); }
+    .container #navbar ul a li {
+      list-style-type: none;
+      color: #222;
+      font-weight: 500;
+      padding: 0.9rem;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+      transition: 0.3s; }
+      .container #navbar ul a li:hover {
+        transform: translateY(-2px);
+        list-style-type: disc;
+        color: rgba(144, 16, 204, 0.7); }
+
+.container #main-doc {
+  margin: 2rem 0;
+  margin-left: 350px;
+  max-width: 80%; }
+  .container #main-doc section header > h1 {
+    font-size: 1.8rem; }
+  .container #main-doc section p {
+    padding: 0.5rem 0; }
+  .container #main-doc section h2 {
+    padding: 0.5rem 0;
+    font-size: 1.5rem; }
+  .container #main-doc section h3 {
+    padding: 0.5rem 0; }
+  .container #main-doc section code {
+    display: inline-block;
+    background-color: rgba(238, 173, 224, 0.2); }
+  .container #main-doc section .code-block {
+    display: block;
+    padding: 1rem;
+    margin-left: 0.5rem;
+    border-left: 3px solid #4387e0;
+    border-radius: 1px; }
+  .container #main-doc section a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 600;
+    border-bottom: 3px solid rgba(144, 16, 204, 0.2);
+    transition: 0.3s; }
+    .container #main-doc section a:hover {
+      opacity: 0.8; }
