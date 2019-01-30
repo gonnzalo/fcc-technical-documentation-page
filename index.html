@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="container">
-      <nav id="navbar">
+      <nav id="navbar" class="navbar navbar-active">
         <header><h1>Gatsby Documentation</h1></header>
         <ul>
           <a href="#quick-start" class="nav-link"><li>Quick Start</li></a>
@@ -24,10 +24,13 @@
           <a href="#querying-data" class="nav-link"><li>Querying data</li></a>
           <a href="#sourcing-data" class="nav-link"><li>Sourcing data</li></a>
           <a href="#transforming-data" class="nav-link"><li>Transforming data</li></a>
-          <a href="#reference" class="nav-link"><li>Reference</li></a>
+          <a href="#reference" class="nav-link"><li id="test">Reference</li></a>
         </ul>
       </nav>
-      <main id="main-doc">
+      <div class="navbar-toggle" id="js-navbar-toggle">
+        <span></span> <span></span> <span></span><span></span>
+      </div>
+      <main id="main-doc" class="main">
         <section class="main-section" id="quick-start">
           <header><h1>Quick Start</h1></header>
           <p>Gatsby is a blazing fast modern site generator for React.</p>
